@@ -32,7 +32,7 @@ const Main = () => {
                     </ul>
                 </div>
             </div>
-
+ 
         </main>
     )
 }
