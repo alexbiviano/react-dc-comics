@@ -80,6 +80,24 @@ header ul li a {
   margin-right: 10px;
 }
 
+ /* card */
+
+ .card {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.card-body {
+  background-color: white;
+  width: 20%
+}
+
+.card-body img {
+  width: 100%;
+}
+
+
 /* FOOTER */
 
 .footer-top {
