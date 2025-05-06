@@ -109,6 +109,27 @@ header ul li a {
   text-align: center;
 }
 
+.comic-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.jumbotron{
+  background-image: url(./assets/img/jumbotron.jpg);
+  height: 400px;
+  position: relative;
+}
+
+.jumbotron h4{
+  position: absolute;
+  background-color: rgb(46, 84, 253);
+  color: white;
+  padding: 10px 20px;
+  bottom: -20px;
+  left: 230px;
+}
+
 /* FOOTER */
 
 .footer-top {

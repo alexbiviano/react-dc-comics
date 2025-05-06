@@ -3,6 +3,16 @@ import ListComics from "./ListComics"
 const Main = () => {
     return (
         <main>
+               <div className='jumbotron'>
+                <h4>CURRENT SERIES</h4>
+            </div>
+            <div className='big-container'>
+                <div className='container'>
+                    <div className='content-goes-here'>
+                        <div className='comic-list'></div>
+                        </div>
+                    </div>
+                </div>
             <div className="main-top">
                 <div className="container">
                     <ListComics />
