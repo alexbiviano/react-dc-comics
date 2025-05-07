@@ -159,26 +159,15 @@ const ListComics = () => {
         },
     ];
 
-    return (
-        <div>
-            <div className="container card-container">
+    const ListComics = () => {
 
-                <ComicCard src={comics[0].thumb} title={comics[0].title} />
-                <ComicCard src={comics[1].thumb} title={comics[1].title} />
-                <ComicCard src={comics[2].thumb} title={comics[2].title} />
-                <ComicCard src={comics[3].thumb} title={comics[3].title} />
-                <ComicCard src={comics[4].thumb} title={comics[4].title} />
-                <ComicCard src={comics[5].thumb} title={comics[5].title} />
-                <ComicCard src={comics[6].thumb} title={comics[6].title} />
-                <ComicCard src={comics[7].thumb} title={comics[7].title} />
-                <ComicCard src={comics[8].thumb} title={comics[8].title} />
-                <ComicCard src={comics[9].thumb} title={comics[9].title} />
-                <ComicCard src={comics[10].thumb} title={comics[10].title} />
-                <ComicCard src={comics[11].thumb} title={comics[11].title} />
-
-            </div>
-        </div>
-    )
-}
-
+        return (
+          <>
+            {comics.map(({ id, thumb, series }) => (
+              <ComicCard key={`comic-${id}`} thumb={thumb} series={series} />
+            ))}
+          </>
+        )
+      }
+      
 export default ListComics
